@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>DOM</h1>
+    <p id="paragrafo1">1</p>
+    <p name="paragrafo2">XXXXXXX2</p>
+    <p class="paragrafo3">3</p>
+    <p class="paragrafo4">Paragrafo 4</p>
+    <p class="paragrafo5">Paragrafo 5</p>
+    <script>
+        var paragrafo1 = window.document.getElementById("paragrafo1");
+        
+        var paragrafo2 = window.document.getElementsByName("paragrafo2");
+        paragrafo2[0].innerText = "paragrafo com name" 
+        console.log(paragrafo2[0])
+
+        let paragrafo3 = window.document.getElementsByClassName("paragrafo3");
+        console.log(paragrafo3[0])
+        
+        var paragrafo4 = document.getElementsByTagName("p",[3]);
+        console.log(paragrafo4)
+
+        var paragrafo5 = document.querySelector(".paragrafo5");
+        console.log(paragrafo5)
+    </script>
+</body>
+</html>

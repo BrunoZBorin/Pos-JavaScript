@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materialize</title>
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Logo</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Cadastro</a></li>
+            <li><a href="#sobrenos">Sobre nós</a></li>
+          </ul>
+        </div>
+      </nav>
+      <h1>Usuario - Materialize</h1>
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="first_name" type="text" class="validate">
+              <label for="first_name">Nome</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="number" class="validate">
+              <label for="last_name">Idade</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input  id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+                  <button class="btn btn-large waves-effect waves-light" type="submit"> Salvar </button>
+        </form>
+      </div>
+        <div class="row">
+            <h2 >Sobre nós</h2>
+            
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header">First</div>
+                    <div class="collapsible-body"><span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop p
+                    </span></div>
+                </li>
+            </ul>
+
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header">Second</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit d d wdlkdmalskmxalskmxaklxmaklsxmal
+                        xaskxnasjkxnaskjxnasjkxnaskxjnasjkxnakxnaskj
+                        axkasoxjasoxjoaisjxioasjxoaxjoasijxoaisjxioajaio
+                    </span></div>
+                </li>
+            </ul>
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header">Third</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit d d wdlkdmalskmxalskmxaklxmaklsxmal
+                        xaskxnasjkxnaskjxnasjkxnaskxjnasjkxnakxnaskj
+                        axkasoxjasoxjoaisjxioasjxoaxjoasijxoaisjxioajaio
+                    </span></div>
+                </li>
+            </ul>
+            <ul class="collapsible">
+                <li>
+                    <div id="sobrenos" class="collapsible-header">Forth</div>
+                    <div class="collapsible-body"><span>Lorem ipsum dolor sit d d wdlkdmalskmxalskmxaklxmaklsxmal
+                        xaskxnasjkxnaskjxnasjkxnaskxjnasjkxnakxnaskj
+                        axkasoxjasoxjoaisjxioasjxoaxjoasijxoaisjxioajaio
+                    </span></div>
+                </li>
+            </ul>
+
+        </div>            
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.collapsible');
+        var instances = M.Collapsible.init(elems);
+      });
+      </script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

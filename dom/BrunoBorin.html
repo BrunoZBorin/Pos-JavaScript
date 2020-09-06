@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruno Borin</title>
+</head>
+ 
+<body>
+    <h1>
+        Bruno Borin
+    </h1>
+ 
+    <label>Numero 1</label>
+    <input name="n1" type="text" value="">
+ 
+    <br />
+    <br />
+ 
+    <label>Numero 2</label>
+    <input name="n2" type="text" value="">
+    <br /> <br />
+    <button type="button">Somar</button>
+    <button type="button">Subtrair</button> <br />
+
+    <script>
+        var n1 = document
+            .getElementsByName("n1")[0];
+        console.log(n1.value);
+        var n2 = document
+            .getElementsByName("n2")[0];
+ 
+        var botaoSoma = document
+            .getElementsByTagName("button")[0];
+ 
+        var botaoSubtracao = document
+            .getElementsByTagName("button")[1];
+ 
+        botaoSoma.addEventListener("click", function (){
+            let total = new Number(n1.value) + new Number(n2.value);
+            alert("Valor total: " + total);
+        });
+ 
+        
+        botaoSubtracao.addEventListener("click", function () {
+            let total = new Number(n1.value) - new Number(n2.value);
+            alert("Valor total: " + total);
+        });
+
+       
+    </script>
+ 
+</body>
+ 
+</html>
